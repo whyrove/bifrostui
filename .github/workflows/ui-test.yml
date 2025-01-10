@@ -1,11 +1,11 @@
 # 运行截图测试
-name: Backstop Tests
+name: UI Tests
 
 on: [push]
 
 jobs:
-  run-ci-test:
-    name: Run CI tests
+  run-ui-test:
+    name: Run UI tests
     runs-on: ubuntu-latest
 
     steps:
