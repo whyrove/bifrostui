@@ -1,5 +1,5 @@
 # 判断是否已经有reference
 if [ ! -d "/bitmaps_reference/" ];then
-  backstop reference
+  backstop test
   else backstop test
 fi
