@@ -20,6 +20,7 @@ jobs:
           version: '9'
 
       - name: npm install, build, and test
+        id: demo
         run: |
           pnpm install
           pnpm run ui:test
@@ -29,6 +30,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           path: backstop_data
+
+      - name: throw error
+        if: ${{ steps.demo.conclusion == 'failure' }}
         run: pnpm run ui:test
 
 
