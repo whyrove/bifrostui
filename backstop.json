@@ -12,7 +12,7 @@
   "scenarios": [
     {
       "label": "Bifrostui",
-      "url": "https://bui.taopiaopiao.com/cores/Button",
+      "url": "http://localhost:8001/cores/button",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": ".dumi-default-previewer-demo",
