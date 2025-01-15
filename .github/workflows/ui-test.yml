@@ -23,13 +23,10 @@ jobs:
         run: |
           pnpm install
           pnpm run ui:test
-  job_2:
-    name: Multiply by 9
-    needs: build_and_test
-    runs-on: ubuntu-latest
-    steps:
+
       - name: Download math result for job 1
         uses: actions/download-artifact@v4
         with:
           name: homework_pre
           path: backstop_data
+
