@@ -19,10 +19,12 @@ jobs:
         with:
           version: '9'
 
-      - name: npm install, build, and test
-        id: demo
+      - name: pnpm install
         run: |
           pnpm install
+
+      - name: pnpm run ui:test
+        run: |
           pnpm run ui:test
 
       - name: upload test result
