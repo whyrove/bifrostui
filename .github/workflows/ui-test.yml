@@ -5,8 +5,6 @@ on: [push]
 jobs:
   build_and_test:
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -27,8 +25,10 @@ jobs:
           pnpm run ui:test
         continue-on-error: true
 
-      - name: Download math result for job 1
+      - name: upload test result
         uses: actions/upload-artifact@v4
         with:
           path: backstop_data
+        run: pnpm run ui:test
+
 
