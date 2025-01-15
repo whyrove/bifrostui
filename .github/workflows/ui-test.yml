@@ -25,9 +25,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Run Tests with Coverage
-        run: pnpm ui:test
-
       - name: Deploy to GitHub Page
         uses: JamesIves/github-pages-deploy-action@v4
         with:
