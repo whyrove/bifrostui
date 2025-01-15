@@ -16,7 +16,7 @@
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": ".dumi-default-previewer-demo",
-      "delay": 500,
+      "delay": 0,
       "hideSelectors": [],
       "removeSelectors": [],
       "hoverSelector": "",
