@@ -29,3 +29,12 @@ jobs:
         with:
           name: code-coverage-report
           path: backstop_data
+
+   upload_test_result:
+      - name: Archive code coverage results
+        needs: build_and_test
+        runs-on: ubuntu-latest
+        uses: actions/upload-artifact@v4
+        with:
+          name: code-coverage-report
+          path: backstop_data
