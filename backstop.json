@@ -12,8 +12,8 @@
   "scenarios": [
     {
       "label": "Bifrostui",
-      "url": "http://localhost:8000/cores/button",
-      "referenceUrl": "",
+      "url": "http://localhost:8000/cores/avatar",
+      "referenceUrl": "https://bui.taopiaopiao.com/cores/avatar",
       "readyEvent": "",
       "readySelector": ".dumi-default-previewer-demo",
       "delay": 0,
