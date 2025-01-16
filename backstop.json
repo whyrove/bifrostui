@@ -12,7 +12,7 @@
   "scenarios": [
     {
       "label": "Bifrostui",
-      "url": "http://localhost:8001/cores/button",
+      "url": "http://localhost:8000/cores/button",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": ".dumi-default-previewer-demo",

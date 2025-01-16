@@ -23,14 +23,7 @@ jobs:
         run: |
           pnpm install
 
-      - name: pnpm run start
-        id: runDocs
-        run: |
-          echo "flag=1" >> $GITHUB_OUTPUT
-          pnpm run start:h5
-
       - name: pnpm run ui:test
-        if: ${{ steps.generate_number.outputs.flag }}
         run: |
           pnpm run ui:test
 
