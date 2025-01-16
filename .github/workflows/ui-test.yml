@@ -1,4 +1,4 @@
-name: Node CI
+name: UI Test
 
 on: [push]
 
@@ -24,10 +24,12 @@ jobs:
           pnpm install
 
       - name: pnpm run start
+        id: runDocs
         run: |
           pnpm run start:h5
 
       - name: pnpm run ui:test
+        if: ${{ job.container.id == 'runDocs' }}
         run: |
           pnpm run ui:test
 
