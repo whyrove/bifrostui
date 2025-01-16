@@ -30,7 +30,7 @@ jobs:
           pnpm run start:h5
 
       - name: pnpm run ui:test
-        if: [[ ${{ steps.generate_number.outputs.flag }} ==1 ]]
+        if: ${{ steps.generate_number.outputs.flag }}
         run: |
           pnpm run ui:test
 
