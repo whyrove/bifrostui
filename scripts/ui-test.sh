@@ -1,4 +1,6 @@
 # 判断是否已经有reference
+
+trap "exit 1" ERR
 while :
   do
     if lsof -i:8000; then
