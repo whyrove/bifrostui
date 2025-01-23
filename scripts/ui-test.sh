@@ -14,5 +14,5 @@ while :
         break;
       fi
     fi
-  sleep 30
+  sleep 3
 done
